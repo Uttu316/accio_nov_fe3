@@ -1,0 +1,65 @@
+/* Minimalist user card */
+.app_usercard {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  max-width: 480px;
+  margin: 24px auto;
+  padding: 24px;
+  background-color: #fafaf9;
+  border: 1px solid #e7e5e4;
+  border-radius: 12px;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #1c1917;
+  transition: border-color 0.2s ease;
+}
+.app_usercard:hover {
+  border-color: #0f766e;
+}
+.app_usercard_avatar img {
+  display: block;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.app_usercard_info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+.app_usercard_info p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-size: 14px;
+  color: #78716c;
+}
+.app_usercard_info svg {
+  flex-shrink: 0;
+  color: #0f766e;
+}
+.app_usercard_info .app_usercard_name {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #1c1917;
+}
+.app_usercard_info .app_usercard_bio {
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+.app_usercard_gender {
+  text-transform: capitalize;
+}
+@media (max-width: 480px) {
+  .app_usercard {
+    flex-direction: column;
+    text-align: center;
+  }
+  .app_usercard_info p {
+    justify-content: center;
+  }
+}

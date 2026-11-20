@@ -1,0 +1,29 @@
+/* Minimalist footer */
+.app_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  padding: 24px 32px;
+  background-color: #fafaf9;
+  border-top: 1px solid #e7e5e4;
+  color: #78716c;
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    sans-serif;
+  text-align: center;
+}
+.app_footer p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.app_footer code {
+  padding: 2px 6px;
+  border-radius: 4px;
+  background-color: #f0fdfa;
+  color: #0f766e;
+  font-size: 13px;
+}
