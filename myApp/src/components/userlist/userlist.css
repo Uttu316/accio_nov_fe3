@@ -1,0 +1,16 @@
+/* Users list: responsive flex grid */
+.app_userlist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 1100px;
+  margin: 32px auto;
+  padding: 0 24px;
+  align-items: center;
+  justify-content: center;
+}
+.app_userlist .app_usercard {
+  width: 320px;
+  max-width: none;
+  margin: 0;
+}

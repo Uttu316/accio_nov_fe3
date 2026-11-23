@@ -21,6 +21,8 @@
     "Segoe UI",
     sans-serif;
 }
+.text {
+}
 .app_logo {
   display: flex;
   align-items: center;

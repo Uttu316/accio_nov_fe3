@@ -1,14 +1,14 @@
 import logo from "../../assets/react.svg";
-import "./header.css";
+import styles from "./header.module.css";
 
 const Header = () => {
   return (
-    <header className="app_header">
-      <div className="app_logo">
+    <header className={styles.app_header}>
+      <div className={`${styles.app_logo} ${styles.text}`}>
         <img src={logo} />
         <h2>My App</h2>
       </div>
-      <nav className="app_navbar">
+      <nav className={styles.app_navbar}>
         <a href="#">Contact</a>
         <a href="#">About</a>
       </nav>

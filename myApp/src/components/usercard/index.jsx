@@ -6,16 +6,7 @@ import {
 import { MdEmail as MailIcon } from "react-icons/md";
 import "./usercard.css";
 
-const UserCard = () => {
-  const user = {
-    name: "Harshad Kumbhar",
-    city: "Kolhapur",
-    phone: "767868877",
-    email: "harshad@gmail.com",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-    gender: "male",
-    bio: "I am good developer, I also like to play Harmonium",
-  };
+const UserCard = ({ user }) => {
   return (
     <div className="app_usercard">
       <div className="app_usercard_avatar">
