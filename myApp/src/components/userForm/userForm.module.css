@@ -1,0 +1,115 @@
+/* Minimalist user form (CSS Module) */
+.wrapper {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 32px 24px;
+  background-color: #fafaf9;
+  border: 1px solid #e7e5e4;
+  border-radius: 12px;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #1c1917;
+}
+.title {
+  margin: 0 0 4px;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.subtitle {
+  margin: 0 0 24px;
+  font-size: 14px;
+  color: #78716c;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #44403c;
+}
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  font: inherit;
+  font-size: 15px;
+  color: #1c1917;
+  background-color: #ffffff;
+  border: 1px solid #e7e5e4;
+  border-radius: 8px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.input::placeholder {
+  color: #a8a29e;
+}
+.input:hover {
+  border-color: #d6d3d1;
+}
+.input:focus {
+  outline: none;
+  border-color: #0f766e;
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.12);
+}
+.textarea {
+  resize: vertical;
+  min-height: 110px;
+  line-height: 1.5;
+}
+.inputError,
+.inputError:hover {
+  border-color: #dc2626;
+}
+.inputError:focus {
+  border-color: #dc2626;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.12);
+}
+.error {
+  font-size: 12px;
+  color: #dc2626;
+}
+.button {
+  align-self: flex-start;
+  min-width: 120px;
+  padding: 10px 20px;
+  font: inherit;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #0f766e;
+  border: 1px solid #0f766e;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+.button:hover {
+  background-color: #115e59;
+  border-color: #115e59;
+}
+.button:focus-visible {
+  outline: 2px solid #0f766e;
+  outline-offset: 2px;
+}
+.success {
+  margin: 0;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #0f766e;
+  background-color: #f0fdfa;
+  border: 1px solid #ccfbf1;
+  border-radius: 8px;
+}
+@media (max-width: 480px) {
+  .wrapper {
+    margin: 24px 16px;
+  }
+  .button {
+    align-self: stretch;
+  }
+}
