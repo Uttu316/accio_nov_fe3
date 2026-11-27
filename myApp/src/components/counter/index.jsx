@@ -35,6 +35,7 @@ const Counter = () => {
           Minus
         </button>
       </div>
+      {x > 4 && <p>Ohh its getting bigger</p>}
     </div>
   );
 };

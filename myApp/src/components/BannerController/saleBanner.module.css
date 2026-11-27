@@ -1,0 +1,90 @@
+/* Minimalist sale banner (CSS Module) */
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 28px 24px;
+  text-align: center;
+  background-color: #f0fdfa;
+  border: 1px solid #ccfbf1;
+  border-radius: 10px;
+  animation: fadeIn 0.25s ease;
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #0f766e;
+  background-color: #ffffff;
+  border: 1px solid #ccfbf1;
+  border-radius: 999px;
+}
+/* Small pulsing "live" dot */
+.badge::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #0f766e;
+  animation: pulse 1.6s ease-in-out infinite;
+}
+.heading {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #134e4a;
+}
+.offer {
+  padding: 10px 20px;
+  font: inherit;
+  font-size: 15px;
+  color: #0f766e;
+  background-color: #ffffff;
+  border: 1px solid #0f766e;
+  border-radius: 8px;
+  cursor: pointer;
+  font-variant-numeric: tabular-nums;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.offer:hover {
+  color: #ffffff;
+  background-color: #0f766e;
+}
+.offer:focus-visible {
+  outline: 2px solid #0f766e;
+  outline-offset: 2px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .banner,
+  .badge::before {
+    animation: none;
+  }
+}
